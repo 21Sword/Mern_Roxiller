@@ -8,7 +8,8 @@ A comprehensive and interactive **Transactions Dashboard** built using the **MER
 ## ⚙️ Setup Instructions
 
 1. **Clone the repository:**
-   git clone https://github.com/username/repository-name.git
+   git clone https://github.com/21Sword/Mern_Roxiller.git
+   <br>
    cd repository-name
 
 2. **Install dependencies:**
