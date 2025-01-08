@@ -49,7 +49,7 @@ const TransactionsPieChart = ({ selectedMonth }) => {
     <div style={{ 
       display: 'grid', 
       placeItems: 'center', // This centers the content both horizontally and vertically
-      height: '500px',      // You can adjust the height as needed
+      height: '600px',      // You can adjust the height as needed
       width: '100%'         // Make the container full width
     }}>
       <div style={{ width: '500px', height: '500px' }}>

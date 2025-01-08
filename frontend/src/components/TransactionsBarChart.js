@@ -16,9 +16,23 @@ const TransactionsBarChart = ({ selectedMonth }) => {
       .catch((error) => console.error('Error fetching bar chart data:', error));
   }, [selectedMonth]);
 
+  // Generate the price ranges dynamically
+  const generatePriceRangeLabel = (value) => {
+    if (value <= 100) return '0-100'
+    else if (value<=200) return '101-200'
+    else if (value<=300) return '201-300'
+    else if (value<=400) return '301-400'
+    else if (value<=500) return '401-500'
+    else if (value<=600) return '501-600'
+    else if (value<=700) return '601-700'
+    else if (value<=800) return '701-800'
+    else if (value<=900) return '801-900'
+    else return '901 above'
+  };
+  
   // Prepare the chart data
   const chartData = {
-    labels: barData.map((item) => item._id || "Unknown"), // Handle cases where _id is null/undefined
+    labels: barData.map((item) => generatePriceRangeLabel(item._id || 0)), // Handle missing _id
     datasets: [
       {
         label: 'Number of Items',
@@ -57,7 +71,7 @@ const TransactionsBarChart = ({ selectedMonth }) => {
 
   return (
     <div>
-      <h3>Transactions Bar Chart</h3>
+      <h1 style={{ textAlign: 'center' }}>Transactions Bar Chart</h1>
       <Bar data={chartData} options={options} />
     </div>
   );

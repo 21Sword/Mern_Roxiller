@@ -7,7 +7,8 @@ const MonthSelector = ({ selectedMonth, setSelectedMonth }) => {
   ];
 
   return (
-    <select value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
+    <select value={selectedMonth} onChange={(e) => setSelectedMonth(Number(e.target.value))}>
+      <option value="">Select a Month</option> {/* Placeholder option */}
       {months.map((month, index) => (
         <option key={index} value={index + 1}>
           {month}
