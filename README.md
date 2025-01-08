@@ -16,26 +16,27 @@ A comprehensive and interactive **Transactions Dashboard** built using the **MER
    - Install server dependencies:
      cd backend
      <br>
-     npm run dev
+     npm install
 
    - Install client dependencies:
      cd frontend
      <br>
-     npm start
+     npm install
     
 
 3. **Configure environment variables:**
    - Create a `.env` file in the server directory with the following values:
-     MONGO_URI=YOUR_MONGODB_URL
+     MONGO_URI=YOUR_MONGODB_URL,
      PORT=5000
 
 4. **Run the application:**
    - Start the backend server:
-     cd backend
+     cd backend<br>
      -- First Run seedDatabase.js
      command -> node utils/seedDatabase.js
+     <br>
      npm run dev
 
    - Start the frontend server:
-     cd frontend
+     cd frontend<br>
      npm start
