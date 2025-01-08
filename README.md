@@ -14,14 +14,14 @@ A comprehensive and interactive **Transactions Dashboard** built using the **MER
 
 2. **Install dependencies:**
    - Install server dependencies:
-    
-     cd server
-     npm install
+     cd backend
+     <br>
+     npm run dev
 
    - Install client dependencies:
-     
-     cd client
-     npm install
+     cd frontend
+     <br>
+     npm start
     
 
 3. **Configure environment variables:**
